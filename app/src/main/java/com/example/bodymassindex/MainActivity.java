@@ -1,15 +1,9 @@
 package com.example.bodymassindex;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.constraintlayout.widget.ConstraintSet;
 import androidx.core.content.ContextCompat;
-
-import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.text.style.BackgroundColorSpan;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -17,9 +11,7 @@ import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.google.android.material.textfield.TextInputEditText;
-
 public class MainActivity extends AppCompatActivity {
     Intent intent;
     View view;
@@ -45,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
         textView7 = findViewById(R.id.textView7);
         textView9 = findViewById(R.id.textView9);
         conlay=findViewById(R.id.conlay);
-
         switch1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
@@ -59,12 +50,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                     }
      });
-
-
         button.setOnClickListener(new View.OnClickListener() {
             @Override
-
-
             public void onClick(View view) {
                 double bmi;
                 String a=text_input_.getText().toString();
@@ -93,10 +80,5 @@ public class MainActivity extends AppCompatActivity {
                         textView9.setText("Obese");}
             }
         });
-
-
-
-
-
     }
 }
